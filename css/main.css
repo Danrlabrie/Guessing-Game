@@ -1,0 +1,29 @@
+ body {
+              background-image: url("http://cdn.spacetelescope.org/archives/images/wallpaper2/heic1509a.jpg");
+		background-size: cover;
+ 		-moz-background-size: cover;
+  		-o-background-size: cover;
+  		-webkit-background-size: cover;
+}
+
+.jumbotron h1 { 
+color: rgb(255,255,255);
+background-color: rgba(0,0,0,0.75	); 
+
+}
+
+.jumbotron {
+   
+   background-image: url("https://c1.staticflickr.com/1/219/517017403_b3f5cf3028_z.jpg?zz=1");
+	background-size: cover;
+	border: 5px
+	border-color: black;
+	border-style: solid;
+}
+
+body { 
+font-family: 'Lato', sans-serif;
+}
+
+
+
