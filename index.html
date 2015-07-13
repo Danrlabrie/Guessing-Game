@@ -23,21 +23,21 @@
   <div class="container">
   <div class="jumbotron">
         <h1>Welcome to guess the number!</h1>
-        <form>
+        <form id= "form">
             <label for="guess"></label>
             <input type="number" class="form-control" id="userguess" name="guessbox" min="1" max="100" placeholder="enter a number (1-100)" autofocus required>
             <br>
       <p>
-        <button id="submit" type="submit" class="btn btn-lg btn-primary ">Submit your guess!</button>
+        <button id="submit" type="button" class="btn btn-lg btn-primary ">Submit your guess!</button>
       </p>
       </div>
 	
      <!-- setup -->
   <div class="col-sm-6">
         <p> 
-        <button id="gethint" type="gethint" class="btn btn-success btn-lg">Get a hint?</button>
-        <button id="showanswer" type="showanswer" class="btn btn-lg btn-info">I give up! Give me the answer!</button>
-	<button id="restart" type="restart" class="btn btn-lg btn-danger">Restart?  </button>
+        <button id="gethint" type="button" class="btn btn-success btn-lg">Get a hint?</button>
+        <button id="showanswer" type="button" class="btn btn-lg btn-info">I give up! Give me the answer!</button>
+	<button id="restart" type="button" class="btn btn-lg btn-danger">Restart?  </button>
         </p>
   </div>
 </div>
@@ -45,8 +45,11 @@
 
 <!-- HAL -->
 <div>
-  <img class="pull-right" src="https://upload.wikimedia.org/wikipedia/commons/f/f6/HAL9000.svg" />
+  <img id="hal" class="pull-right" src="https://upload.wikimedia.org/wikipedia/commons/f/f6/HAL9000.svg" />
+  <div id="overlay"></div>
 </div>
+<!-- HALTEXT -->
+<div id="halbox"> <h3 id="halspeech"> Welcome to Guess the number, Dave. </h3>  </div>
  <!-- Tables -->
  <div class="row">
         <div class="col-md-4">
