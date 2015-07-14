@@ -20,30 +20,42 @@
     <![endif]-->
   </head>
   <body>
-  <div class="container">
-  <div class="jumbotron">
-        <h1>Welcome to guess the number!</h1>
+  <!-- WIN IMAGE -->
+<div class="image">
+  <img id="end" src="img/end.gif"/>
+  <h1> YOU WIN! </h1>
+</div>
+  <div class="pull-left" id="gamesign"> <h1> Guess the Number!</h1></div>
+  <div class="container ">
+  <div class="jumbotron f">
+        
+        <div id="guesstitle"> <h3 > Guesses Left </h3> </div>
+        <div id="guesscountbox"> <h3 id="guesscount"> 5 </h3> </div>
+        <div id= "space"> </div>
         <form id= "form">
             <label for="guess"></label>
             <input type="number" class="form-control" id="userguess" name="guessbox" min="1" max="100" placeholder="enter a number (1-100)" autofocus required>
             <br>
-      <p>
-        <button id="submit" type="button" class="btn btn-lg btn-primary ">Submit your guess!</button>
-      </p>
-      </div>
+        <p>
+          <button id="submit" type="button" class="btn btn-lg btn-primary ">Submit your guess!</button>
+        </p>
+    </div>
 	
      <!-- setup -->
-  <div class="col-sm-6">
+  <div class="col-sm-6" >
         <p> 
-        <button id="gethint" type="button" class="btn btn-success btn-lg">Get a hint?</button>
-        <button id="showanswer" type="button" class="btn btn-lg btn-info">I give up! Give me the answer!</button>
-	<button id="restart" type="button" class="btn btn-lg btn-danger">Restart?  </button>
+        <button id="gethint" type="button" class="btn btn-success btn-lg f">Get a hint?</button>
+        <button id="showanswer" type="button" class="btn btn-lg btn-info f">I give up! Give me the answer!</button>
+	<button id="restarter" type="button" class="btn btn-lg btn-danger">Restart?  </button>
         </p>
   </div>
 </div>
 
 
-<!-- HAL -->
+
+<!-- FAIL IMAGE -->
+
+<!-- HAL -->s
 <div>
   <img id="hal" class="pull-right" src="https://upload.wikimedia.org/wikipedia/commons/f/f6/HAL9000.svg" />
   <div id="overlay"></div>
@@ -51,37 +63,18 @@
 <!-- HALTEXT -->
 <div id="halbox"> <h3 id="halspeech"> Welcome to Guess the number, Dave. </h3>  </div>
  <!-- Tables -->
- <div class="row">
-        <div class="col-md-4">
-          <table class="table table-bordered">
+ <div class="row f">
+        <div  class="col-md-4">
+          <table id="myTable" class="table table-bordered">
             <thead>
+              <tr> 
+                <th colspan=3 id="tabletitle"> Guess History </th> 
+              </tr>
               <tr>
-                <th>Guesses ago</th>
-                <th>Hot Guesses</th>
-                <th>Cold Guesses</th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
-                <td id="test"></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>2</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>3</td>
-                <td></td>
-                <td></td>
-              </tr>
-              <tr>
-                <td>4</td>
-                <td></td>
-                <td></td>
-              </tr>
+              
             </tbody>
           </table>
         </div>
